@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 @RequestMapping("/person")
-public class ProviderController {
+public class PersonController {
     @RequestMapping(value = "/say/{name}",method = RequestMethod.GET)
     public String findName(@PathVariable("name") String name){
-        return name;
+        return "provider:"+name;
     }
 }

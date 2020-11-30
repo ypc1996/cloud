@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.provider.mapper.UserMapper">
+
+    <!-- 查找用户信息 -->
+    <select id="findUserByUserName" parameterType="String" resultType="com.example.provider.model.User">
+       select * from sys_user where username=#{username}
+    </select>
+    <select id="findPermissionsByUserId" parameterType="Integer" resultType="com.example.provider.model.Permission">
+        select * from sys_permission
+        join sys_role_permission on
+        sys_permission.id=sys_role_permission.permission_id
+        join sys_user_role on
+        sys_user_role.role_id=sys_role_permission.role_id
+        where sys_user_role.user_id=#{userId}
+    </select>
+
+</mapper>

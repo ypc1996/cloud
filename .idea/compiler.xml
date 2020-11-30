@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="quartz" />
+        <module name="provider" />
+        <module name="provider2" />
         <module name="invoker" />
         <module name="cloud-serve2" />
         <module name="cloud-serve" />
+        <module name="job" />
         <module name="cloud" />
-        <module name="provider" />
       </profile>
     </annotationProcessing>
   </component>
@@ -19,7 +22,10 @@
       <module name="cloud-serve" options="-parameters" />
       <module name="cloud-serve2" options="-parameters" />
       <module name="invoker" options="-parameters" />
+      <module name="job" options="-parameters" />
       <module name="provider" options="-parameters" />
+      <module name="provider2" options="-parameters" />
+      <module name="quartz" options="-parameters" />
     </option>
   </component>
 </project>

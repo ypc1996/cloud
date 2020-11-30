@@ -10,6 +10,9 @@
         <option value="$PROJECT_DIR$/cloud-serve/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-serve2/pom.xml" />
         <option value="$PROJECT_DIR$/invoker/pom.xml" />
+        <option value="$PROJECT_DIR$/job/pom.xml" />
+        <option value="$PROJECT_DIR$/provider2/pom.xml" />
+        <option value="$PROJECT_DIR$/quartz/pom.xml" />
       </list>
     </option>
   </component>

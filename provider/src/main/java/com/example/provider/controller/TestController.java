@@ -57,8 +57,12 @@ public class TestController {
 
         SysRole sysRole1 =new SysRole();
         sysRole1.setId(1);
+        sysRole1.setRoleName("a");
+        sysRole1.setSuccess(true);
         SysRole sysRole =new SysRole();
         sysRole.setId(1);
+        sysRole.setRoleName("a");
+        sysRole.setSuccess(true);
         System.out.println(sysRole1.equals(sysRole));
 
         WorkerInterface workerInterface= () -> {
